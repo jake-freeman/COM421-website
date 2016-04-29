@@ -1,0 +1,83 @@
+body {
+  font-family: 'Cabin', sans-serif;
+  background-color: #323d45;
+  padding-top: 20px;
+}
+
+.background {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 200px 200px 0;
+  border-color: transparent #007bff transparent transparent;
+}
+
+/* containers */
+@media(min-width:1200px){
+  .container {
+    max-width: 1200px;
+    padding: 10px 50px 50px;
+  }
+}
+@media(min-width:992px) {
+  .container {
+    padding: 10px 50px 50px;
+  }
+}
+@media(max-width:767px) {
+  .container {
+    padding: 10px 50px 50px;
+  }
+}
+
+
+.background-dark {
+  background-color: #323d45;
+  color: #ffffff;
+}
+
+.background-light {
+  background-color: #ffffff;
+  color: #323d45;
+}
+
+.section-header {
+  padding-bottom: 10px;
+  background-color: #eaeaea;
+}
+.section-header > div > h2 {
+  margin-top: 10px;
+}
+
+h1 {
+  font-size: 150px;
+  color: #ffffff;
+}
+
+hr {
+  border-color: #323d45;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+/* Title */
+#title {
+  padding-top: 10px;
+  padding-bottom: 0px;
+}
+#title > div {
+  position: relative;
+  height: 330px;
+}
+#title > div > img {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+#crimes-iit, #crimes-nyu{
+  height: 200px;
+  min-width: 400px;
+  padding-top: 0px;
+}
