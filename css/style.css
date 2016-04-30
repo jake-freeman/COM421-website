@@ -8,18 +8,22 @@ body {
 @media(min-width:1200px){
   .container {
     max-width: 970px;
-    padding: 10px 50px 50px;
+    padding: 10px 50px 20px;
   }
 }
 @media(min-width:992px) {
   .container {
-    padding: 10px 50px 50px;
+    padding: 10px 50px 20px;
   }
 }
 @media(max-width:767px) {
   .container {
-    padding: 10px 50px 50px;
+    padding: 10px 50px 20px;
   }
+}
+
+.container {
+  /*margin-left: 30px;*/
 }
 
 
@@ -33,16 +37,17 @@ body {
   color: #323d45;
 }
 
+.background-medium {
+  background-color: #eaeaea;
+  color: #323d45;
+}
+
 .section-header {
   padding-bottom: 10px;
   background-color: #eaeaea;
 }
 .section-header > div > h2 {
   margin-top: 10px;
-}
-
-h1 {
-  font-size: 80px;
 }
 
 hr {
@@ -55,10 +60,16 @@ hr {
 #title {
   padding-top: 10px;
   padding-bottom: 0px;
+  background-image: url(../images/skyline-blue.png);
+  background-repeat: no-repeat;
+  background-position: right bottom;
 }
 #title > div {
   position: relative;
   height: 330px;
+}
+#title > div > h1 {
+  font-size: 80px;
 }
 #title > div > img {
   position: absolute;
@@ -71,3 +82,17 @@ hr {
   min-width: 400px;
   padding-top: 0px;
 }
+
+/* Borrowed from resume project, needs cleanup */
+.navbar  { border: 0px; background-color: #323d45; position: absolute; top: 400px; right: 5%; width: 110px; z-index: 999; }
+.navbar .navbar-collapse { padding: 0px; max-height: none; }
+.navbar .navbar-nav { float: none; }
+.navbar-nav { margin: 0px; }
+.navbar .nav > li { display: block; float: none; height: 80px; }
+.navbar .nav > li a { display: block;  height: 80px; text-align: center; padding-top: 30px; font-weight: 400; color: #FFFFFF; }
+.navbar .nav > li a:hover, .navbar .nav > li a:focus { color: #999999; }
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus { background: #a7a7a7; color: #FFFFFF; }
+.navbar-default .navbar-toggle:hover .icon-bar,
+.navbar-default .navbar-toggle:focus .icon-bar { background: #222222; }
+
+.fixed .navbar  { position: fixed; top: 40px; }

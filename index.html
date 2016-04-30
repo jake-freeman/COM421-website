@@ -15,34 +15,54 @@
   <link href='https://fonts.googleapis.com/css?family=Cabin:400,600' rel='stylesheet' type='text/css'>
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#sidenav">
+
   <div id="fb-root"></div>
-  <script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
   <!-- Title -->
   <div id="title" class="container background-dark">
       <div class="col-xs-6 col-sm-6">
-        <h1>PUBLIC SAFETY</h1>
+        <h1>CAMPUS SAVIORS</h1>
         <p>
-          Lorem ipsum dolor sit amet, possit scitis quas praesenti perdideram vestes. Lorem ipsum dolor sit amet, possit scitis quas praesenti perdideram vestes.
+          An analysis of violent crimes in and around university campuses in high crime areas and its impact on students
         </p>
       </div>
-      <div class="col-xs-4 col-xs-offset-1 col-sm-4 col-sm-offset-1">
-        <img src="./images/people.png" width=350px>
-      </div>
   </div>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-default" id="sidenav" role="navigation">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse navbar-ex1-collapse">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="proposal.html">Proposal</a></li>
+        <li><a href="#">Report</a></li>
+        <li><a href="#">Presentation</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </nav>
 
   <div id="twitter-feed" class="container background-light">
     <div class="col-xs-6 col-sm-6">
       <a class="twitter-timeline"  href="https://twitter.com/CampusSaviors" data-widget-id="725761329227792384" width="435" height="300" data-chrome="transparent">Tweets by @CampusSaviors</a>
     </div>
     <div class="col-xs-6 col-sm-6">
-      <a class="twitter-timeline"  href="https://twitter.com/CampusSaviors" data-widget-id="725761329227792384" width="435" height="300" data-chrome="transparent">Tweets by @CampusSaviors</a>
+      <div class="fb-page" data-href="https://www.facebook.com/CampusSaviors" data-tabs="timeline" data-width="435" data-height="300" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+        <div class="fb-xfbml-parse-ignore">
+          <blockquote cite="https://www.facebook.com/CampusSaviors">
+            <a href="https://www.facebook.com/CampusSaviors">Facebook</a>
+          </blockquote>
+        </div>
+      </div>
     </div>
   </div>
 
@@ -68,5 +88,6 @@
   <script type="text/javascript" src="https://code.highcharts.com/highcharts.js"></script>
   <script type="text/javascript" src="https://code.highcharts.com/modules/exporting.js"></script>
   <script type="text/javascript" src="js/custom.js"></script>
+  <script type="text/javascript" src="js/nav.js"></script>
 </body>
 </html>
