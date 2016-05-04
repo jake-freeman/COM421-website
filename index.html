@@ -16,8 +16,6 @@
 </head>
 
 <body data-spy="scroll" data-target="#sidenav">
-
-  <div id="fb-root"></div>
   <!-- Title -->
   <div id="title" class="container background-dark">
       <div class="col-xs-6 col-sm-6">
@@ -56,13 +54,8 @@
       <a class="twitter-timeline"  href="https://twitter.com/CampusSaviors" data-widget-id="725761329227792384" width="435" height="300" data-chrome="transparent">Tweets by @CampusSaviors</a>
     </div>
     <div class="col-xs-6 col-sm-6">
-      <div class="fb-page" data-href="https://www.facebook.com/CampusSaviors" data-tabs="timeline" data-width="435" data-height="300" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
-        <div class="fb-xfbml-parse-ignore">
-          <blockquote cite="https://www.facebook.com/CampusSaviors">
-            <a href="https://www.facebook.com/CampusSaviors">Facebook</a>
-          </blockquote>
-        </div>
-      </div>
+      <!-- Facebook (use iframe since js is being buggy) -->
+      <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FCampusSaviors%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="435" height="300" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
     </div>
   </div>
 
@@ -88,6 +81,7 @@
   <script type="text/javascript" src="https://code.highcharts.com/highcharts.js"></script>
   <script type="text/javascript" src="https://code.highcharts.com/modules/exporting.js"></script>
   <script type="text/javascript" src="js/custom.js"></script>
+  <script type="text/javascript" src="js/charts.js"></script>
   <script type="text/javascript" src="js/nav.js"></script>
 </body>
 </html>
