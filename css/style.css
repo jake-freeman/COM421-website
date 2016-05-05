@@ -1,60 +1,24 @@
-body {
-  font-family: 'Cabin', sans-serif;
-  background-color: #f0f0f0;
-  padding-top: 20px;
-}
-
 /* containers */
 @media(min-width:1200px){
-  .container {
-    max-width: 970px;
-    padding: 10px 50px 20px;
-  }
+  .container { max-width: 970px; padding: 10px 50px 20px; }
 }
 @media(min-width:992px) {
-  .container {
-    padding: 10px 50px 20px;
-  }
+  .container { padding: 10px 50px 20px; }
 }
 @media(max-width:767px) {
-  .container {
-    padding: 10px 50px 20px;
-  }
+  .container { padding: 10px 50px 20px; }
 }
 
-.container {
-  /*margin-left: 30px;*/
-}
+body { font-family: 'Cabin', sans-serif; background-color: #f0f0f0; padding: 20px 0px 30px; }
+hr { border-color: #323d45; margin-top: 0px; margin-bottom: 10px; }
 
 
-.background-dark {
-  background-color: #323d45;
-  color: #ffffff;
-}
+.background-dark   { background-color: #323d45; color: #ffffff; }
+.background-light  { background-color: #ffffff; color: #323d45; }
+.background-medium { background-color: #eaeaea; color: #323d45; }
 
-.background-light {
-  background-color: #ffffff;
-  color: #323d45;
-}
-
-.background-medium {
-  background-color: #eaeaea;
-  color: #323d45;
-}
-
-.section-header {
-  padding-bottom: 10px;
-  background-color: #eaeaea;
-}
-.section-header > div > h2 {
-  margin-top: 10px;
-}
-
-hr {
-  border-color: #323d45;
-  margin-top: 0px;
-  margin-bottom: 10px;
-}
+.section-header { padding-bottom: 10px; background-color: #eaeaea; }
+.section-header > div > h2 { margin-top: 10px; text-align: center; }
 
 /* Title */
 #title {
@@ -64,24 +28,15 @@ hr {
   background-repeat: no-repeat;
   background-position: right bottom;
 }
-#title > div {
-  position: relative;
-  height: 330px;
-}
-#title > div > h1 {
-  font-size: 80px;
-}
-#title > div > img {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-}
+#title > div { position: relative; height: 330px; }
+#title > div > h1 { font-size: 80px; }
+#title > div > img { position: absolute; left: 0; bottom: 0; }
 
-#crimes-iit, #crimes-nyu{
-  height: 200px;
-  min-width: 400px;
-  padding-top: 0px;
-}
+#crimes-iit,
+#crimes-nyu { height: 200px; min-width: 400px; padding-top: 0px; }
+
+#slideshow,
+#report-doc { padding-left: 0px; padding-right: 0px; }
 
 /* Borrowed from resume project, needs cleanup */
 .navbar  { border: 0px; background-color: #323d45; position: absolute; top: 400px; right: 5%; width: 110px; z-index: 999; }
@@ -90,8 +45,14 @@ hr {
 .navbar-nav { margin: 0px; }
 .navbar .nav > li { display: block; float: none; height: 80px; }
 .navbar .nav > li a { display: block;  height: 80px; text-align: center; padding-top: 30px; font-weight: 400; color: #FFFFFF; }
-.navbar .nav > li a:hover, .navbar .nav > li a:focus { color: #999999; }
-.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus { background: #a7a7a7; color: #FFFFFF; }
+
+.navbar .nav > li a:hover,
+.navbar .nav > li a:focus { color: #999999; }
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus { background: #a7a7a7; color: #FFFFFF; }
+
 .navbar-default .navbar-toggle:hover .icon-bar,
 .navbar-default .navbar-toggle:focus .icon-bar { background: #222222; }
 
