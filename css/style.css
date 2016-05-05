@@ -17,10 +17,15 @@ a,
 a:hover,
 a:focus { color: #323d45; }
 
+/* table stuff */
+td { padding-right: 10px; padding: 5px 15px 5px; }
+th { background-color: #eaeaea; padding: 5px 15px 5px; }
+
 /* container background/color */
 .background-dark   { background-color: #323d45; color: #ffffff; }
 .background-light  { background-color: #ffffff; color: #323d45; }
 .background-medium { background-color: #eaeaea; color: #323d45; }
+.background-subtle { background-color: #f8f8f8; color: #323d45; }
 
 /* section header */
 .section-header { padding-bottom: 10px; background-color: #eaeaea; }
