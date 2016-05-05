@@ -10,6 +10,12 @@ $(document).ready(function()
     stickyNavigation();
   });
 
+  $(window).on('resize', function()
+  {
+    setNavPos();
+  });
+
+  setNavPos();
   stickyNavigation();
 });
 
@@ -23,4 +29,12 @@ function stickyNavigation()
   {
     $('body').removeClass('fixed');
   }
+}
+
+function setNavPos() {
+  $('#sidenav').offset(
+    {
+      left: ($('#title').offset().left + $('#title').width() + 150)
+    }
+  )
 }
