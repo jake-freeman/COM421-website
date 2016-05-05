@@ -73,20 +73,71 @@
   </div>
 
   <div class="container background-light">
-    <h2>Why</h2>
+    <h2>Types of Crime Affecting Universities</h2>
   </div>
 
-  <div id="crimes" class="container background-light">
-    <h2>Crimes by Type</h2>
-    <div id="crimes-iit" class="col-xs-6 col-sm-6"></div>
-    <div id="crimes-nyu" class="col-xs-6 col-sm-6"></div>
+  <div class="container background-light">
+    <div class="crime-chart" id="crimes-iit"></div>
+    <h3>Types of Crimes around IIT, Chicago</h3>
+    <p>
+      Knowing the types of crimes that are the most common in important in order to be aware of the types of activities you need to watch out for when walking around campus.
+    </p>
+    <p>
+      In particular, the area around IIT has a high rate of violence with a rather low rate of theft (in relation to other crimes) compared to the other Universities studied.
+    </p>
+  </div>
+
+  <div class="container background-light">
+    <div class="crime-chart" id="crimes-nyu"></div>
+    <h3>Types of Crimes around Columbia, New York</h3>
+    <p>
+      While Columbia has much lower crime rates around its campus compared to IIT, the proportion of theft and armed robery is much higher.
+    </p>
+    <p>
+      Student who attend Columbia should be warned about carrying valuebles around campus to help cut down on this threat.
+    </p>
+  </div>
+
+  <div class="container background-light">
+    <div class="crime-chart" id="crimes-uoc"></div>
+    <h3>Types of Crimes around University of Chicago</h3>
+    <p>
+      The area around University of Chicago has the highest crime rate of all the Universities tested. It's distribution of types of crime is very similar to that of IIT, which is also in Chicago.
+    </p>
+    <p>
+      This still follows the patern of a higher rate of violence compared to theft in Chicago universities. A more detailed analysis of this data can be found in our <a href="report.html">report</a>.
+    </p>
+  </div>
+
+  <div class="container background-light">
+    <h2>Levels of Crime Over Time</h2>
+    <p>
+      The general trend for crimes around the campuses we researched over the 5 year period has been a decreasing violent crime rate. This means that there has been progress but the crime rates are still too high to be considered truely safe for university students.
+    </p>
+    <div id="crimes-year"></div>
+  </div>
+
+  <div class="container background-light">
+    <h2>Where can I learn more?</h2>
+    <h3><a href="proposal.html">Read our proposal</a></h3>
+    <p>
+      Here you can learn about why the project was started and who was involved in creating the website, report, presentation, and social media outlets.
+    </p>
+    <h3><a href="report.html">Browse our official report</a></h3>
+    <p>
+      This contains the data and analysis in much greater detail than what can be found on this page.
+    </p>
+    <h3><a href="presentation.html">Peruse our presentation</a></h3>
+    <p>
+      This shows off more visualizations of our data and includes a brief explanation of the report as well as more information about the branding and website design.
+    </p>
   </div>
 
   <!-- include jquery, bootstrap, and custom js -->
   <script type="text/javascript" src="js/jquery-2.2.1.min.js"></script>
   <script type="text/javascript" src="js/bootstrap.min.js"></script>
   <script type="text/javascript" src="https://code.highcharts.com/highcharts.js"></script>
-  <script type="text/javascript" src="https://code.highcharts.com/modules/exporting.js"></script>
+  <script type="text/javascript" src="https://code.highcharts.com/modules/drilldown.js"></script>
   <script type="text/javascript" src="js/custom.js"></script>
   <script type="text/javascript" src="js/charts.js"></script>
   <script type="text/javascript" src="js/nav.js"></script>

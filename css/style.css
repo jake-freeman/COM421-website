@@ -9,14 +9,20 @@
   .container { padding: 10px 50px 20px; }
 }
 
+/* global tag changes */
 body { font-family: 'Cabin', sans-serif; background-color: #f0f0f0; padding: 20px 0px 30px; }
 hr { border-color: #323d45; margin-top: 0px; margin-bottom: 10px; }
 
+a,
+a:hover,
+a:focus { color: #323d45; }
 
+/* container background/color */
 .background-dark   { background-color: #323d45; color: #ffffff; }
 .background-light  { background-color: #ffffff; color: #323d45; }
 .background-medium { background-color: #eaeaea; color: #323d45; }
 
+/* section header */
 .section-header { padding-bottom: 10px; background-color: #eaeaea; }
 .section-header > div > h2 { margin-top: 10px; text-align: center; }
 
@@ -32,13 +38,18 @@ hr { border-color: #323d45; margin-top: 0px; margin-bottom: 10px; }
 #title > div > h1 { font-size: 80px; }
 #title > div > img { position: absolute; left: 0; bottom: 0; }
 
-#crimes-iit,
-#crimes-nyu { height: 200px; min-width: 400px; padding-top: 0px; }
+/* crime charts */
+.crime-chart  { height: 200px; min-width: 400px; padding-top: 0px; }
 
+#crimes-iit,
+#crimes-uoc { float: right; }
+#crimes-nyu { float: left; }
+
+/* slidehow and report */
 #slideshow,
 #report-doc { padding-left: 0px; padding-right: 0px; }
 
-/* Borrowed from resume project, needs cleanup */
+/* Navbar stuff */
 .navbar  { border: 0px; background-color: #323d45; position: absolute; top: 400px; right: 5%; width: 110px; z-index: 999; }
 .navbar .navbar-collapse { padding: 0px; max-height: none; }
 .navbar .navbar-nav { float: none; }
