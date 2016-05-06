@@ -11,7 +11,7 @@
 } (document,"script","twitter-wjs");
 
 function resize_report() {
-  $('#report-doc > iframe').css('height', ($(window).height() - $('#title').height() - 100) + "px");
+  $('#report-doc > iframe').css('height', ($(window).height() - $('#title').height() - 65) + "px");
 }
 
 $(document).ready(function()
