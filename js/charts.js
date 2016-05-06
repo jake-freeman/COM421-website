@@ -228,6 +228,71 @@ $(function () {
           }
     });
 
+    $('#crimes-ucla').highcharts({
+        chart: {
+            plotBackgroundColor: null,
+            plotBorderWidth: null,
+            plotShadow: false,
+            type: 'pie'
+        },
+        title: {
+            text: 'University of California, Los Angeles<br />2014-2015'
+        },
+        tooltip: {
+            headerFormat: '{series.name}<br />',
+            pointFormat: '{point.name}: <b>{point.percentage:.1f} %</b>'
+        },
+        credits: { enabled: false },
+        exporting: { enabled: false },
+        plotOptions: {
+            pie: {
+                allowPointSelect: true,
+                cursor: 'pointer',
+                dataLabels: {
+                    enabled: true,
+                    format: '{point.name}: <b>{point.y:.0f}</b>',
+                    style: {
+                        color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
+                    }
+                }
+            }
+        },
+        series: [{
+            name: 'Violent Crimes',
+            colorByPoint: true,
+            data: [{
+                name: 'Burglary',
+                y: 216,
+                drilldown: null
+            }, {
+                name: 'Vehicle Theft',
+                y: 27,
+                drilldown: null
+            }, {
+                name: 'Assault',
+                y: 7,
+                drilldown: null
+            }, {
+                name: 'Theft',
+                y: 94,
+                drilldown: 'Theft'
+            }]
+        }],
+        drilldown: {
+            series: [{
+                name: 'Theft',
+                id: 'Theft',
+                data: [
+                    ['Petty (< $950)', 50],
+                    ['Grand (> $950)', 25],
+                    ['Bunco', 11],
+                    ['Shoplifting', 1],
+                    ['Stolen Bike', 7]
+                ]
+            }]
+          }
+    });
+
     $('#crimes-year').highcharts({
         chart: {
             type: 'column'

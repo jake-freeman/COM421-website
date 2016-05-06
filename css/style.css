@@ -48,11 +48,16 @@ th { background-color: #eaeaea; padding: 5px 15px 5px; }
 
 #crimes-iit,
 #crimes-uoc { float: right; }
+
+#crimes-ucla,
 #crimes-nyu { float: left; }
 
 /* slidehow and report */
 #slideshow,
 #report-doc { padding: 0px 0px 0px }
+
+/* misc */
+.new-exp { color: #999999; margin-right: 5pt; }
 
 /* Navbar stuff */
 .navbar  { border: 0px; background-color: #323d45; position: absolute; top: 400px; right: 5%; width: 110px; z-index: 999; }
