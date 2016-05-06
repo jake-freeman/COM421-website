@@ -11,7 +11,12 @@
 } (document,"script","twitter-wjs");
 
 function resize_report() {
-  $('#report-doc > iframe').css('height', ($(window).height() - $('#title').height() - 65) + "px");
+  if ($(window).height() < 1200) {
+    $('#report-doc > iframe').css('height', 4000 + 'px');
+  }
+  else {
+    $('#report-doc > iframe').css('height', ($(window).height() - $('#title').height() - 65) + 'px');
+  }
 }
 
 $(document).ready(function()
